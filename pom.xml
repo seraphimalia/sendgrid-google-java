@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>sendgrid-google-java</groupId>
 	<artifactId>sendgrid-google-java</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>sendgrid-google-java</name>
 	<description>SendGrid with Maven for Packaging</description>
 
