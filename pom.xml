@@ -5,6 +5,31 @@
 	<version>1.0.0</version>
 	<name>sendgrid-google-java</name>
 	<description>SendGrid with Maven for Packaging</description>
+
+	<repositories>
+		<repository>
+			<id>sonatype-nexus-snapshots</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</repository>
+		<repository>
+			<id>AdDynamoNexus</id>
+			<name>Ad Dynamo Nexus Repo</name>
+			<url>http://nexus.addynamo.com/nexus/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<parent>
+		<groupId>com.addynamo</groupId>
+		<artifactId>parent-pom</artifactId>
+		<version>1.2</version>
+	</parent>
+
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
@@ -34,7 +59,7 @@
 			<artifactId>appengine-api-labs</artifactId>
 			<version>${gae.version}</version>
 		</dependency>
-		
+
 		<!-- TESTING -->
 		<dependency>
 			<groupId>junit</groupId>
